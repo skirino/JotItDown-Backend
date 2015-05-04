@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                       controllers.Application.index
+POST    /register               controllers.Application.register
+GET     /keys                   controllers.KeyValues.index
+DELETE  /keys                   controllers.KeyValues.delete(keys: String)
+GET     /values                 controllers.KeyValues.get(keys: String)
+POST    /values                 controllers.KeyValues.set
